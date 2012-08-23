@@ -1,4 +1,5 @@
-﻿using Cassette;
+﻿using System.IO;
+using Cassette;
 using Cassette.HtmlTemplates;
 using Cassette.Scripts;
 using Cassette.Stylesheets;
@@ -9,7 +10,13 @@ namespace ClientSideMvc.Web
     {
         public void Configure(BundleCollection bundles)
         {
-            bundles.AddPerSubDirectory<ScriptBundle>("Client");
+            var topLevelOnly = new FileSearch { SearchOption = SearchOption.TopDirectoryOnly };
+
+            bundles.AddPerIndividualFile<ScriptBundle>("Client", topLevelOnly);
+            bundles.Add<ScriptBundle>("Client/Vendor");
+            bundles.Add<ScriptBundle>("Client/App");
+            
+
             bundles.AddPerSubDirectory<StylesheetBundle>("Client");
             bundles.AddPerSubDirectory<HtmlTemplateBundle>("Client");
         }
