@@ -39,8 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AjaxMin">
-      <HintPath>..\packages\AjaxMin.4.51.4507.18296\lib\net20\AjaxMin.dll</HintPath>
+    <Reference Include="AjaxMin, Version=4.51.4507.18296, Culture=neutral, PublicKeyToken=21ef50ce11b5d80f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AjaxMin.4.58.4566.27257\lib\net20\AjaxMin.dll</HintPath>
     </Reference>
     <Reference Include="AttributeRouting">
       <HintPath>..\packages\AttributeRouting.Core.2.5.1.0\lib\net40\AttributeRouting.dll</HintPath>
@@ -175,13 +176,13 @@
     <Content Include="Client\Vendor\bootstrap\js\bootstrap.js" />
     <Content Include="Client\Vendor\bootstrap\js\bootstrap.min.js" />
     <Content Include="Client\Vendor\jquery.history.js" />
-    <Content Include="Client\Vendor\jquery.js" />
     <Content Include="Client\Vendor\jquery.metadata.js" />
     <Content Include="Client\Vendor\jquery.placeholder.js" />
     <Content Include="Client\Vendor\jquery.url.js" />
     <Content Include="Client\Vendor\knockout-2.1.0.debug.js" />
     <Content Include="Client\Vendor\moment.js" />
-    <Content Include="Client\Vendor\require.js" />
+    <Content Include="Client\Vendor\require-jquery.js" />
+    <Content Include="Client\core.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

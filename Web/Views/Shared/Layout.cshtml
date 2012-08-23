@@ -13,26 +13,13 @@
     <meta name="author" content="">
 
     @Bundles.RenderStylesheets()
-    @*@Bundles.RenderScripts()*@
       
-    <script src="cassette.axd/asset/Client/Vendor/require.js"></script>
+    <script data-main="/cassette.axd/asset/Client/core.js" src="/cassette.axd/asset/Client/Vendor/require-jquery.js"></script>
     <script>
-        require.config({
-            baseUrl: "/cassette.axd/asset/Client",
+        require(["App/main"], function (main) {
+            main.Call();
         });
-        require( ["App/main"],
-            function(main) {
-                //This function will be called when all the dependencies
-                //listed above are loaded. Note that this function could
-                //be called before the page is loaded.
-                //This callback is optional.
-                console.log("loaded...");
-            }
-        );
     </script>
-
-    
-      
 
     <style type="text/css">
       body {

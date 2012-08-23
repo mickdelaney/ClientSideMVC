@@ -1,7 +1,11 @@
-require(["App/one", "App/two", "App/three"], function (one, two, three) {
+define(["App/one", "App/two", "App/three"], function (one, two, three) {
+    "use strict";
 
-    one.Call();
-    two.Call();
-    three.Call();
-
+    var inner = {};
+    inner.Call = function () {
+        one.Call();
+        two.Call();
+        three.Call();
+    };
+    return inner;
 });
