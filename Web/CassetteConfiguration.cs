@@ -3,7 +3,7 @@ using Cassette.HtmlTemplates;
 using Cassette.Scripts;
 using Cassette.Stylesheets;
 
-namespace MVCWEB
+namespace ClientSideMvc.Web
 {
     public class CassetteConfiguration : IConfiguration<BundleCollection>
     {

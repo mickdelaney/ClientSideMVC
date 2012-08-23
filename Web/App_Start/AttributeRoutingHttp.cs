@@ -1,9 +1,10 @@
 using System.Web.Routing;
 using AttributeRouting.Web.Http.WebHost;
+using ClientSideMvc.Web.App_Start;
 
-[assembly: WebActivator.PreApplicationStartMethod(typeof(MVCWEB.App_Start.AttributeRoutingHttp), "Start")]
+[assembly: WebActivator.PreApplicationStartMethod(typeof(AttributeRoutingHttp), "Start")]
 
-namespace MVCWEB.App_Start {
+namespace ClientSideMvc.Web.App_Start {
     public static class AttributeRoutingHttp {
 		public static void RegisterRoutes(RouteCollection routes) {
             

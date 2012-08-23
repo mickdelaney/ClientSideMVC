@@ -1,9 +1,9 @@
 using System.Web.Routing;
 using AttributeRouting.Web.Mvc;
 
-[assembly: WebActivator.PreApplicationStartMethod(typeof(MVCWEB.App_Start.AttributeRouting), "Start")]
+[assembly: WebActivator.PreApplicationStartMethod(typeof(ClientSideMvc.Web.App_Start.AttributeRouting), "Start")]
 
-namespace MVCWEB.App_Start {
+namespace ClientSideMvc.Web.App_Start {
     public static class AttributeRouting {
 		public static void RegisterRoutes(RouteCollection routes) {
             

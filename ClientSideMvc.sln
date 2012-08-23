@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CassetteCoffeeRequireJS", "MVCWEB\CassetteCoffeeRequireJS.csproj", "{62CD3D3E-F8CC-4394-9EFA-CA3B6A00DEE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientSideMvc.Web", "Web\ClientSideMvc.Web.csproj", "{62CD3D3E-F8CC-4394-9EFA-CA3B6A00DEE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
