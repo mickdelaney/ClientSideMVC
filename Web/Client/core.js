@@ -1,5 +1,5 @@
 require.config({
-    baseUrl: "/cassette.axd/asset/Client",
+    baseUrl: "/Client",
     paths: {
         vendor: 'Vendor'
     }

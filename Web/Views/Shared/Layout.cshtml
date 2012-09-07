@@ -1,6 +1,6 @@
 ﻿@{
     Bundles.Reference("Client/Vendor");
-    Bundles.Reference("Client/App");
+    //Bundles.Reference("Client/App");
 }
 
 <!DOCTYPE html>
@@ -14,7 +14,7 @@
 
     @Bundles.RenderStylesheets()
       
-    <script data-main="/cassette.axd/asset/Client/core.js" src="/cassette.axd/asset/Client/Vendor/require-jquery.js"></script>
+    <script data-main="/Client/core.js" src="/Client/Vendor/require-jquery.js"></script>
     <script>
         require(["App/main"], function (main) {
             main.Call();
